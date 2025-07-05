@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chart</title>
+	</head>
+	<body>
+		<canvas id="tryArc" width="400" height="400"></canvas>
+		<script>
+			
+      const canvas = document.getElementById("tryArc");
+      const ctx = canvas.getContext("2d");
+      ctx.beginPath();
+      ctx.lineTo(200, 200);
+      ctx.arc(200, 200, 200, Math.PI / 2, Math.PI);
+      ctx.lineTo(200, 200);
+      ctx.fillStyle = "#f00";
+      ctx.fill();
+      // ctx.stroke();/
+		</script>
+		
+		
+	</body>
+</html>
